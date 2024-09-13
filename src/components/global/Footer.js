@@ -47,7 +47,6 @@ const Footer = () => {
                     <Link className='mt-1 hover:text-[#BDDD01]' href={""}>Beastlife T-Shirt</Link><br/>
                     <Link className='mt-1 hover:text-[#BDDD01]' href={""}>Sipper</Link><br/>
                     <Link className='mt-1 hover:text-[#BDDD01]' href={""}>Shaker</Link><br/>
-
                   </ul>
                 </div>
               </div>
@@ -58,7 +57,6 @@ const Footer = () => {
                     <Link className='mt-1 hover:text-[#BDDD01]' href={"/about"}>Blogs</Link><br/>
                     <Link className='mt-1 hover:text-[#BDDD01]' href={"/blog"}>Lab Reports</Link><br/>
                     <Link className='mt-1 hover:text-[#BDDD01]' href={"/project"}>Trace Order</Link><br/>
-
                   </ul>
                 </div>
               </div>
@@ -69,15 +67,15 @@ const Footer = () => {
                   <Link className='mt-1 hover:text-[#f4a845]' href={"/"}><FaInstagram /></Link>
                   <Link className='mt-1 hover:text-[#91e642]' href={"/"}><FaWhatsapp /></Link>
                   <Link className='mt-1 hover:text-[#fb4747]' href={"/"}><FaYoutube /></Link>
-
                 </div>
+                
               </div>              
             </div>       
         </div>
-        <div className="mt-6 md:mt-8 flex  md:justify-end relative  text-[#BDDD01]">
+        <div className=" absolute text-[#BDDD01] right-0 mt-[-280px]">
               <Image src="/assets/footer-panther.svg"height={350} width={350}alt="sheru"/>
               </div>
-        <p className="text-center items-center copyright">Copyright © 2024 BeastLife. All Rights Reserved.</p>   
+        <p className="text-center items-center copyright py-5">Copyright © 2024 BeastLife. All Rights Reserved.</p>   
       </footer>
     </div>
   );

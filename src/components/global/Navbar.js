@@ -41,17 +41,17 @@ const Navbar = () => {
   return (
     <div>
       <nav className="flex flex-col p-2 sticky top-0 bg-[#231F1F] text-white">
-        <div className="flex flex-row items-center md:px-24 ">
-          <div className="flex items-center w-full lg:w-auto">
+        <div className="md:flex flex-row items-center md:px-24 ">
+          <div className="flex items-center w-full lg:w-auto justify-between">
                <div className="text-2xl font-bold">
                   <Image src="/assets/beastlife-whitelogo.png" height={130} width={130} alt="logo"/>
                 </div>
+                 <button onClick={toggleSidebar} className="text-3xl lg:hidden focus:outline-none"><FiMenu/></button>
             </div>
 
-              <div className="relative w-full max-w-lg my-4 lg:my-0 lg:mx-auto">
+              <div className="relative w-full max-w-lg my-2 md:my-4 lg:my-0 lg:mx-auto">
                 <input type="text" placeholder="Search..." className="w-full px-4 py-2 rounded-md text-black"/>
               </div>
-                 <button onClick={toggleSidebar} className="text-2xl lg:hidden focus:outline-none"><FiMenu/></button>
                    <div className="hidden lg:flex space-x-4 text-3xl font-semibold">
              <Link href="/authenticity"><PiQrCodeBold /></Link>
             <Link href="/"><CiUser className=""/></Link>
