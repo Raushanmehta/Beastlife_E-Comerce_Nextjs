@@ -28,7 +28,7 @@ const Carousel = ({ images }) => {
             key={idx}
             onClick={() => setCurrentIndex(idx)}
             className={`w-3 h-3 rounded-full ${
-              currentIndex === idx ? 'bg-blue-600' : 'bg-gray-400'
+              currentIndex === idx ? 'bg-[#BDDD01]' : 'bg-gray-400'
             }`}
           />
         ))}

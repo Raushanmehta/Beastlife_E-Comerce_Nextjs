@@ -1,36 +1,39 @@
 import Image from 'next/image';
 import React from 'react';
+import Rating from './Rating';
 
-const ProductCard = ({ productData = [] }) => {
-  console.log(productData);
-  if (!Array.isArray(productData) || productData.length === 0) {
-    return <p>No products available.</p>;
+const ProductCard = ({ product }) => {
+  if (!product) {
+    return <p className='text-center text-gray-500'>No product available.</p>;
   }
 
   return (
-    <div>
-      <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5 mt-10 px-10'>
-        {productData.map(product => (
-          <div key={product.id} className='bg-white shadow-lg rounded-lg'>
-            <div>
-              <Image 
-                src={product.imageUrl} 
-                alt='product' 
-                width={500} 
-                height={700} 
-                className='rounded-lg w-full' 
-                layout='responsive'
-              />
-              <div className='p-4'>
-                <p>{product.description}</p>
-                <h3>{product.price}</h3> 
-                <button className='bg-black text-white flex w-full h-12 items-center justify-center rounded-full border border-slate-800 hover:bg-gray-800'>
-                  Buy
-                </button>
-              </div>
+    <div className='bg-white shadow-lg rounded-lg overflow-hidden mt-10  '>
+      <div className='relative'>
+        <Image src={product.imageUrl} alt={product.title || 'Product image'} width={300} height={500}
+          className='rounded-lg  w-full transition-transform duration-300 ease-in-out 
+          group-hover:scale-110 ' layout='responsive' />
+          {/* <span className="absolute top-2 left-2 bg-[#BDDD01] text-white text-xs font-bold px-2 py-1 ">
+            #NEW
+          </span>     */}         
+          <span className="absolute top-2 right-2 bg-[#CC0C39] text-white text-center text-xs font-bold p-1 ">  
+            {product.discount}% <br></br>OFF
+          </span>
+      </div>  
+      <div className='p-2 relative '>
+        <div className="my-5 text-center font-semibold ">
+            <p className='text-sm font-bold text-black text-center'>{product.title}</p>
+            <div className="flex justify-center items-center mt-2">
+              <Rating rating={product.rating} />
+              <span className="text-md ml-2">({product.reviews})</span>
             </div>
-          </div>
-        ))}
+             <span className="line-through text-gray-500">₹{product.oldPrice}</span>
+             <span className="ml-2 text-xl font-bold">₹{product.newPrice}</span>
+        </div>
+        <button className='bg-black text-white flex w-full h-12 items-center justify-center 
+        rounded-md border  hover:bg-[#BDDD01] transition duration-200'>
+          Add to cart
+        </button>
       </div>
     </div>
   );
