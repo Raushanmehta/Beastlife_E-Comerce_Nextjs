@@ -5,18 +5,12 @@ import Image from "next/image";
 import { CiUser } from "react-icons/ci";
 import { PiQrCodeBold, PiShoppingCartFill } from "react-icons/pi";
 import { FiMenu } from "react-icons/fi";
+import { navbarlink } from "@/constants";
 
 
 const Navbar = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
-  const navbarlink = [
-    { label: "Products", link: "/products" },
-    { label: "Our Story", link: "/story" },
-    { label: "Authenticity Guaranteed", link: "/authenticity" },
-    { label: "Our Blog", link: "/blog" },
-    { label: "Track My Order", link: "/order-track" },
-  ];
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
