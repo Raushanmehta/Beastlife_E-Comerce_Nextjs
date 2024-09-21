@@ -12,33 +12,34 @@ const NewLaunch = () => {
             Taste your Tradition with the timeless <strong>KESAR PISTA</strong> Pro Whey with real Pista Flakes! Gains have never tasted this good!
           </p>
           <h4 className="text-2xl font-semibold mb-2">Just Dropped</h4>
-          <div className="flex flex-col md:flex-row rounded-lg border-black border-2">
-            <div className="flex-none w-full md:w-60 h-60">
-              <Image
-                src="/assets/kesarpista.jpg"
-                height={250}
-                width={250}
-                alt="kesharpista"
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div className="flex flex-col justify-between bg-white text-center ">
-              <div>
-                <div className="bg-gradient-to-r text-xl to-pink-500 via-purple-500 from-indigo-500 text-white p-2 rounded mb-2">
-                  <span >Real Pista Flakes</span>
-                </div>
-                <h2 className="text-lg font-semibold mb-2 max-md:">
-                  Pro Concentrate Whey Protein with Ultrasorb Tech | 924gm | Kesar Pista
-                </h2>
-              </div>
-              <div>
-                <p className="text-xl font-bold mb-4">Price</p>
-                <button className="bg-black w-full text-white rounded hover:bg-blue-600 text-xl p-2 transition">
-                  Shop Now
-                </button>
-              </div>
-            </div>
-          </div>
+          <div className="flex flex-col md:flex-row border-black border-2 rounded-lg overflow-hidden">
+  <div className="flex-none w-full md:w-60 h-60 rounded-lg">
+    <Image
+      src="/assets/kesarpista.jpg"
+      height={250}
+      width={250}
+      alt="kesharpista"
+      className="object-cover w-full h-full"
+    />
+  </div>
+  <div className="flex flex-col justify-between bg-white text-center  w-full md:w-60">
+    <div>
+      <div className="bg-gradient-to-r text-xl to-pink-500 via-purple-500 from-indigo-500 text-white p-2 rounded ">
+        <span>Real Pista Flakes</span>
+      </div>
+      <h2 className="text-lg font-semibold">
+        Pro Concentrate Whey Protein with Ultrasorb Tech | 924gm | Kesar Pista
+      </h2>
+    </div> 
+    <div>
+      <p className="text-xl font-bold p-2">Price</p>
+      <button className="bg-black w-full text-white rounded hover:bg-blue-600 text-xl transition duration-300 p-2">
+        Shop Now
+      </button>
+    </div>
+  </div>
+</div>
+
         </div>
         <div className="flex-1 flex justify-end ">
           <iframe
