@@ -87,3 +87,15 @@ export const menuItems = [
   { id: 3, label: "Item 3", link: "/item3" },
 ];
 
+ 
+export const newLaunchData = {
+  title: "BeastLife Pro Whey With Real Pista Flakes",
+  flavor: "KESAR PISTA",
+  image: "/assets/kesarpista.jpg",
+  specialFeature: "Real Pista Flakes",
+  description: "Pro Concentrate Whey Protein with Ultrasorb Tech",
+  weight: "924gm",
+  oldPrice: "$49.99",
+  price: "$39.99",
+  videoUrl: "https://www.youtube.com/embed/VIDEO_ID",
+};

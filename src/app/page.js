@@ -1,6 +1,6 @@
 import ProductSlider from '@/components/ProductSlider';
 import Carousel from '../components/Carousel';
-import { images } from '@/constants';
+import { images, newLaunchData } from '@/constants';
 import NewLaunch from '@/components/NewLaunch';
 
 
@@ -9,7 +9,7 @@ export default function Home() {
     <div>     
       <Carousel images={images} />
       <ProductSlider/>
-      <NewLaunch/>
+      <NewLaunch product={newLaunchData}/>
      
     </div>
   );
