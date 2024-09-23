@@ -9,7 +9,7 @@ const NewLaunch = ({ product }) => {
         {/* Video Section - Mobile on Top, Right on Medium Screens */}
         <div className="flex-1 mb-6 md:mb-0 md:order-2 flex justify-center">
           <iframe
-            className="object-cover w-full max-w-md aspect-video rounded-lg"
+            className="object-cover w-full max-w-md aspect-square rounded-lg"
             src={product.videoUrl}
             title="Product Video"
             allowFullScreen
@@ -17,7 +17,7 @@ const NewLaunch = ({ product }) => {
         </div>
 
         {/* Product Details Section */}
-        <div className="flex-1 mb-6 md:mb-0 md:order-1">
+        <div className="flex-1 mb-6 md:mb-0 text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-bold mb-2 text-amber-700">New Launch Alert</h1>
           <p className="text-lg font-semibold mb-2 mt-4">{product.title}</p>
           <p className="mb-4">
@@ -35,11 +35,11 @@ const NewLaunch = ({ product }) => {
               />
             </div>
             <div className="flex flex-col justify-between bg-white text-center rounded-r-none border-black border-2 w-full md:w-60">
-              <div>
+              <div className="text-center">
                 <div className="bg-gradient-to-r text-xl to-pink-500 via-purple-500 from-indigo-500 text-white p-2 ">
                   <span>{product.specialFeature}</span>
                 </div>
-                <h2 className="text-md mt-6 font-semibold items-center ">
+                <h2 className="text-md mt-6 font-semibold">
                   {product.description} | {product.weight} | {product.flavor}
                 </h2>
               </div>
