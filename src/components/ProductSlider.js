@@ -18,8 +18,8 @@ const ProductSlider = () => {
   };
 
   return (
-    <div className='md:px-14 m-4 md:m-10'>
-      <div className='flex items-center'>
+    <div className='bg-[#F6F6F6]'>
+      <div className='flex items-center md:px-24 p-10'>
         <span className='text-7xl md:text-[40px] md:font-semibold text-[#BDDD01]'>|</span> 
         <div className='container flex justify-between mt-4 md:mt-2 md:pl-4 md:text-center'>
           <h2 className='font-bold text-3xl'> 
@@ -32,7 +32,7 @@ const ProductSlider = () => {
         </div>  
       </div>
       
-      <section className="relative overflow-hidden bg-white p-4">
+      <section className="relative overflow-hidden md:px-2 ">
         <div className="flex flex-col items-center">
           <ul className="flex overflow-x-auto snap-x snap-mandatory space-x-4 scroll-hidden" ref={trackRef}>
             {productData.map((product, index) => (

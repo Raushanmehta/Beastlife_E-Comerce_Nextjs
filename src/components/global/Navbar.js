@@ -10,14 +10,11 @@ import { navbarlink } from "@/constants";
 
 const Navbar = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
-
-
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
   };
-
   return (
-    <div className="">
+    <div className="sticky">
       <nav className="flex flex-col  bg-black text-white z-50">
         <div className="md:flex flex-row items-center px-4 md:px-24 mt-4">
           <div className="flex items-center w-full lg:w-auto justify-between">
