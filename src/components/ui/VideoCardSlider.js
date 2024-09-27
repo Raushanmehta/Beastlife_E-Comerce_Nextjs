@@ -13,7 +13,7 @@ const VideoCardSlider = ({ product }) => {
     const handleLoadedData = () => setIsLoading(false);
     const handleError = () => {
         setHasError(true);
-        setIsLoading(false);
+        setIsLoading(true);
     };
 
     return (

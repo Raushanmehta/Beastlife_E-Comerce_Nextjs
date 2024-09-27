@@ -17,7 +17,7 @@ export const productData = [
   {
     id: 1,
     title: "Pro Concentrate Whey Protein with Ultrasorb Tech | 924gm | Rich Chocolate",
-    imageUrl: "/assets/procuct-1.jpg",
+    imageUrl: "/assets/product-1.jpg",
     videoUrl: "/assets/video-1.MOV",
     oldPrice: 3499,
     newPrice: 4166,
@@ -28,7 +28,7 @@ export const productData = [
   {
     id: 2,
     title: "Pro Concentrate Whey Protein with Ultrasorb Tech | 924gm | Rich Chocolate",
-    imageUrl: "/assets/procuct-1.jpg",
+    imageUrl: "/assets/product-2.png",
     videoUrl: "/assets/video-1.MOV",
     oldPrice: 3499,
     newPrice: 4166,
@@ -39,7 +39,7 @@ export const productData = [
   {
     id: 3,
     title: "Pro Concentrate Whey Protein with Ultrasorb Tech | 924gm | Rich Chocolate",
-    imageUrl: "/assets/procuct-1.jpg",
+    imageUrl: "/assets/product-3.jpg",
     videoUrl: "/assets/video-1.MOV",
     oldPrice: 3499,
     newPrice: 4166,
@@ -50,7 +50,7 @@ export const productData = [
   {
     id: 4,
     title: "Pro Concentrate Whey Protein with Ultrasorb Tech | 924gm | Rich Chocolate",
-    imageUrl: "/assets/procuct-1.jpg",
+    imageUrl: "/assets/product-4.jpg",
     videoUrl: "/assets/video-1.MOV",
     oldPrice: 3499,
     newPrice: 4166,
@@ -61,7 +61,7 @@ export const productData = [
   {
     id: 5,
     title: "Pro Concentrate Whey Protein with Ultrasorb Tech | 924gm | Rich Chocolate",
-    imageUrl: "/assets/procuct-1.jpg",
+    imageUrl: "/assets/product-5.jpg",
     videoUrl: "/assets/video-1.MOV",
     oldPrice: 3499,
     newPrice: 4166,
@@ -72,7 +72,55 @@ export const productData = [
   {
     id: 6,
     title: "Pro Concentrate Whey Protein with Ultrasorb Tech | 924gm | Rich Chocolate",
-    imageUrl: "/assets/procuct-1.jpg",
+    imageUrl: "/assets/product-6.jpg",
+    videoUrl: "/assets/video-1.MOV",
+    oldPrice: 3499,
+    newPrice: 4166,
+    discount: 22,
+    rating: 3,
+    reviews: 4,
+    
+  },
+  {
+    id: 6,
+    title: "Pro Concentrate Whey Protein with Ultrasorb Tech | 924gm | Rich Chocolate",
+    imageUrl: "/assets/product-7.png",
+    videoUrl: "/assets/video-1.MOV",
+    oldPrice: 3499,
+    newPrice: 4166,
+    discount: 22,
+    rating: 3,
+    reviews: 4,
+    
+  },
+  {
+    id: 6,
+    title: "Pro Concentrate Whey Protein with Ultrasorb Tech | 924gm | Rich Chocolate",
+    imageUrl: "/assets/product-8.jpg",
+    videoUrl: "/assets/video-1.MOV",
+    oldPrice: 3499,
+    newPrice: 4166,
+    discount: 22,
+    rating: 3,
+    reviews: 4,
+    
+  },
+  {
+    id: 6,
+    title: "Pro Concentrate Whey Protein with Ultrasorb Tech | 924gm | Rich Chocolate",
+    imageUrl: "/assets/product-9.jpg",
+    videoUrl: "/assets/video-1.MOV",
+    oldPrice: 3499,
+    newPrice: 4166,
+    discount: 22,
+    rating: 3,
+    reviews: 4,
+    
+  },
+  {
+    id: 6,
+    title: "Pro Concentrate Whey Protein with Ultrasorb Tech | 924gm | Rich Chocolate",
+    imageUrl: "/assets/product-10.jpg",
     videoUrl: "/assets/video-1.MOV",
     oldPrice: 3499,
     newPrice: 4166,

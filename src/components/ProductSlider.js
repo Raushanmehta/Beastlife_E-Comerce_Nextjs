@@ -34,14 +34,14 @@ const ProductSlider = () => {
       
       <section className="relative overflow-hidden md:px-2 ">
         <div className="flex flex-col items-center">
-          <ul className="flex overflow-x-auto snap-x snap-mandatory space-x-4 scroll-hidden" ref={trackRef}>
+          <ul className="flex overflow-x-auto snap-x  snap-mandatory space-x-4 scroll-hidden" ref={trackRef}>
             {productData.map((product, index) => (
-              <li key={index} className="flex-shrink-0 w-1/5"> 
+              <li key={index} className="flex flex-shrink-0 w-1/5"> 
                 <ProductCard product={product} />
               </li>
             ))}
           </ul>
-          <div className="flex justify-between gap-4 text-2xl mt-4">
+          <div className="flex justify-between gap-4 text-2xl my-4">
             <button className="bg-black border  p-3   rounded-full 
              text-[#BDDD01] transition" onClick={() => scrollTrack('prev')}><MdKeyboardArrowLeft />
             </button>
